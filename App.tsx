@@ -10,6 +10,7 @@ import {
 
 function App(): React.JSX.Element {
   const [randomBackground, setRandomBackground] = useState("#ffffff")
+  const [randomBackgroundBox, setRandomBackgroundBox] = useState("#ffffff")
 
   const generateColor = () => {
     const hexRange = "0123456789ABCDEF"
@@ -20,6 +21,7 @@ function App(): React.JSX.Element {
 
     }
     setRandomBackground(color)
+ 
   }
 
   return (
@@ -31,6 +33,9 @@ function App(): React.JSX.Element {
             <Text style={styles.actionButtonTxt}>Press Me</Text>
           </View>
         </TouchableOpacity>
+        <View>
+          <Text >Box</Text>
+        </View>
       </View>
     </>
   );
